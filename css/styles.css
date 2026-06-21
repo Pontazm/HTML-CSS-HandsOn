@@ -29,6 +29,7 @@ a {
 /*-------------------------------------------
   メインコンテンツ
   -------------------------------------------*/
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -41,28 +42,128 @@ a {
 /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+}
 
+.logo {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+.header ul {
+  display: flex;
+  gap: 24px;
+}
+.header li a:hover {
+  opacity: 0.7;
+}
 
 /*-------------------------------------------
   メインビジュアル
   -------------------------------------------*/
+.hero {
+  background-image: url("../img/mainvImg.png");
+  background-size: cover;
+  background-position: right center;
+  border-radius: 16px;
+  width: 100%;
 
+  aspect-ratio: 16 / 9; /* 比率を維持 */
+}
 
 /*-------------------------------------------
   セクション 共通部分
+  
   -------------------------------------------*/
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
 
+.section-title {
+  border-bottom: solid 1px #383e45;
+}
 
 /* -------------------------------------------
   プロフィール
   -------------------------------------------*/
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* 丸く切り抜く */
+  object-fit: cover; /* 比率を保ちながら枠に収める */
+}
 
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
 /* -------------------------------------------
   記事
   -------------------------------------------*/
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 16px;
+}
 
+.art-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
+.thumbnail {
+  background-image: url("../img/articleImg.png");
+  background-size: cover;
+  background-position: right center;
+  height: 200px;
+  width: 100%;
+}
 /*-------------------------------------------
   フッター
   -------------------------------------------*/
+.footer {
+  font-size: small;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* ===== メディアクエリ =====
+   ブレークポイントの目安
+   スマホ：〜767px
+   タブレット：768px〜1023px
+   PC：1024px〜
+================================ */
+
+/* スマホ（767px以下） */
+@media (max-width: 767px) {
+  .hero {
+    aspect-ratio: 4 / 3; /* スマホは少し縦長に */
+  }
+  .articles {
+    grid-template-columns: 1fr; /* 1列 */
+  }
+}
+
+/* タブレット（768px〜1023px） */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .articles {
+    grid-template-columns: 1fr 1fr; /* 1列 */
+  }
+}

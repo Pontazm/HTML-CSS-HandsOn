@@ -1,31 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8" />
+    <title>自己紹介</title>
+    <meta name="description" content="自己紹介サイトです。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSSファイルの適用 -->
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>自己紹介</title>
-  <meta name="description" content="自己紹介サイトです。" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- CSSファイルの適用 -->
-  
-</head>
+  <body>
+    <div class="page-wrapper">
+      <!-- ヘッダー -->
+      <header class="header">
+        <img class="logo" src="img/pontaLogo.png" alt="header-logo" />
+        <nav>
+          <ul>
+            <li><a href="#profile">Plofile</a></li>
+            <li><a href="#articles">Articles</a></li>
+          </ul>
+        </nav>
+      </header>
 
-<body>
-  <div class="page-wrapper">
-    <!-- ヘッダー -->
+      <main class="main-content">
+        <!-- メインビジュアル -->
+        <div class="hero"></div>
 
-    <main class="main-content">
-      <!-- メインビジュアル -->
+        <!-- プロフィール セクション -->
+        <section class="section" id="profile">
+          <h2 class="section-title">Profile</h2>
+          <div class="profile">
+            <img class="profile-img" src="img/profimg2.png" alt="" />
+            <div class="profile-info">
+              <h3>Taich Kotsubo</h3>
+              <p>出身：兵庫県</p>
+              <p>趣味：散歩とスキー fffffffffffffffffffffffffffffff</p>
+              <p>技術：広く浅く</p>
+            </div>
+          </div>
+        </section>
 
-      <!-- プロフィール セクション -->
+        <!-- 記事 セクション -->
+        <section class="section" id="articles">
+          <h2 class="section-title">Articles</h2>
+          <div class="articles">
+            <div class="art-box">
+              <div class="thumbnail"></div>
+              <h3>記事のタイトル</h3>
+              <p>
+                こんな記事をかきました。こんな記事をかきました。こんな記事をかきました。こんな記事をかきました。
+              </p>
+            </div>
 
-      <!-- 記事 セクション -->
+            <div class="art-box">
+              <div class="thumbnail"></div>
+              <h3>記事のタイトル</h3>
+              <p>
+                こんな記事をかきました。こんな記事をかきました。こんな記事をかきました。こんな記事をかきました。
+              </p>
+            </div>
 
-    </main>
+            <div class="art-box">
+              <div class="thumbnail"></div>
+              <h3>記事のタイトル</h3>
+              <p>
+                こんな記事をかきました。こんな記事をかきました。こんな記事をかきました。こんな記事をかきました。
+              </p>
+            </div>
 
-    <!-- フッター -->
+            <div class="art-box">
+              <div class="thumbnail"></div>
+              <h3>記事のタイトル</h3>
+              <p>
+                こんな記事をかきました。こんな記事をかきました。こんな記事をかきました。こんな記事をかきました。
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
 
-  </div>
-</body>
-
+      <!-- フッター -->
+      <footer class="footer">
+        <p>&copy; 2026 Profile</p>
+      </footer>
+    </div>
+  </body>
 </html>
